@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilan Investments | Real Estate, General Supplies & Consultancy</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            accent: '#2563EB',
+                            emerald: '#059669',
+                            amber: '#D97706',
+                            purple: '#7C3AED'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at 20% 20%, #1e1b4b 0%, #0f172a 50%, #022c22 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #38bdf8, #34d399, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed selection:bg-emerald-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand Name -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 via-emerald-500 to-amber-500 flex items-center justify-center font-heading text-xl font-black text-white shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
+                        TI
+                    </div>
+                    <div>
+                        <span class="font-heading text-xl font-extrabold tracking-tight block leading-tight">TILAN</span>
+                        <span class="text-[10px] tracking-widest text-emerald-400 font-bold block uppercase">Investments</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                    <a href="#home" class="hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
+                    <a href="#why-us" class="hover:text-emerald-400 transition-colors">Why Tilan</a>
+                    <a href="#survey" class="hover:text-emerald-400 transition-colors">Rate Us</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-400 hover:to-blue-500 text-white font-semibold shadow-md shadow-emerald-500/20 transition-all hover:scale-105">
+                        <i class="fa-solid fa-phone mr-1.5"></i> Call Us
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-200 hover:text-emerald-400">Home</a>
+            <a href="#services" class="block py-2 text-slate-200 hover:text-emerald-400">Services</a>
+            <a href="#why-us" class="block py-2 text-slate-200 hover:text-emerald-400">Why Tilan</a>
+            <a href="#survey" class="block py-2 text-slate-200 hover:text-emerald-400">Rate Us</a>
+            <a href="tel:0732363383" class="block py-2.5 text-center rounded-lg bg-emerald-600 text-white font-semibold">Call Anytime: 0732 363 383</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative hero-gradient pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden text-white">
+        <!-- Ambient Glowing Lights -->
+        <div class="absolute -top-20 -left-20 w-96 h-96 bg-blue-600/30 rounded-full filter blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-0 w-[30rem] h-[30rem] bg-emerald-500/20 rounded-full filter blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/90 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Anchored in Trust & Integrity
+                    </div>
+                    
+                    <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1]">
+                        Unlocking Growth & Opportunities With <br>
+                        <span class="text-gradient">Zero Compromise</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Tilan Investments bridges financial strategy with real-world execution. We deliver premium <strong class="text-white font-semibold">Real Estate</strong>, seamless <strong class="text-white font-semibold">General Supplies</strong>, and strategic <strong class="text-white font-semibold">Consultancy Services</strong>.
+                    </p>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-600 hover:from-emerald-400 hover:to-blue-500 font-extrabold text-white shadow-xl shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                            <span>Explore Our Services</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="tel:0732363383" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-100 font-bold border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <span>24/7 Line: 0732 363 383</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div class="p-3 rounded-xl bg-slate-800/40 border border-slate-800">
+                            <div class="text-2xl lg:text-3xl font-black text-emerald-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium">Accountability</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-800/40 border border-slate-800">
+                            <div class="text-2xl lg:text-3xl font-black text-blue-400">Strategic</div>
+                            <div class="text-xs text-slate-400 font-medium">Financial Rigor</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-800/40 border border-slate-800">
+                            <div class="text-2xl lg:text-3xl font-black text-amber-400">24/7</div>
+                            <div class="text-xs text-slate-400 font-medium">Direct Availability</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Cards -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none space-y-4">
+                        
+                        <!-- Pillar 1 -->
+                        <div class="bg-slate-800/90 border border-slate-700/80 p-5 rounded-2xl shadow-2xl hover:border-blue-500/50 transition-all transform hover:scale-[1.02] flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl flex-shrink-0">
+                                <i class="fa-solid fa-building-circle-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">Strategic Real Estate</h3>
+                                <p class="text-xs text-slate-400">Property acquisition, land parcels, and residential developments backed by legal & financial safety.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2 -->
+                        <div class="bg-slate-800/90 border border-slate-700/80 p-5 rounded-2xl shadow-2xl hover:border-emerald-500/50 transition-all transform hover:scale-[1.02] flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl flex-shrink-0">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">General Supplies & Procurement</h3>
+                                <p class="text-xs text-slate-400">Corporate procurement, hardware supplies, and contract fulfillment with strict speed.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3 -->
+                        <div class="bg-slate-800/90 border border-slate-700/80 p-5 rounded-2xl shadow-2xl hover:border-amber-500/50 transition-all transform hover:scale-[1.02] flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl flex-shrink-0">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">Executive Consultancy</h3>
+                                <p class="text-xs text-slate-400">Financial advice, capital growth structuring, and project feasibility led by experts.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-100 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 font-extrabold uppercase text-xs tracking-widest">Our Operations</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Pillars of Excellence</h2>
+                <p class="text-slate-600 mt-3 text-base">Tilan Investments combines field expertise with rigorous financial ethics to power your ventures.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Real Estate -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-3xl mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-house-flag"></i>
+                        </div>
+                        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-3">Real Estate</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            We assist clients in sourcing prime land, commercial properties, and modern residential developments with verified titles and strategic appreciation potential.
+                        </p>
+                        <ul class="space-y-2.5 text-sm font-semibold text-slate-700 mb-6">
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Land Sourcing & Title Verification</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Property Development Management</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Commercial & Housing Investments</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0722313878" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white font-bold text-slate-800 transition-colors text-center block text-sm">
+                        Inquire Real Estate
+                    </a>
+                </div>
+
+                <!-- General Supplies -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-3xl mb-6 shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-3">General Supplies</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            End-to-end procurement and logistics for institutions, businesses, and development projects. We deliver high-grade materials on exact timelines.
+                        </p>
+                        <ul class="space-y-2.5 text-sm font-semibold text-slate-700 mb-6">
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Institutional & Corporate Supplies</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Building & Construction Materials</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Efficient Logistics & Delivery</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0722313878" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-emerald-600 hover:text-white font-bold text-slate-800 transition-colors text-center block text-sm">
+                        Request Supplies Quote
+                    </a>
+                </div>
+
+                <!-- Consultancy -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-3xl mb-6 shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-3">Consultancy</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Leveraging seasoned leadership to offer top-tier advisory in capital allocation, risk management, and business expansion.
+                        </p>
+                        <ul class="space-y-2.5 text-sm font-semibold text-slate-700 mb-6">
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Investment Strategy & Planning</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Financial Advisory & Due Diligence</li>
+                            <li class="flex items-center gap-2 text-xs"><i class="fa-solid fa-check text-emerald-500"></i> Business Operations Advisory</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0732363383" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-amber-500 hover:text-white font-bold text-slate-800 transition-colors text-center block text-sm">
+                        Book Consultation
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 font-extrabold uppercase text-xs tracking-widest">Why Choose Us</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Built On Trust & Responsibility</h2>
+                <p class="text-slate-600 mt-3 text-base">We hold ourselves to the highest corporate standards, ensuring peace of mind across all engagements.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center hover:border-emerald-500 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Absolute Trust</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Uncompromising transparency in every agreement, valuation, and transaction.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center hover:border-blue-500 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Responsibility</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Dedicated stewardship of client resources with strict adherence to timelines.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center hover:border-amber-500 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Prompt Execution</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Rapid procurement turnaround and efficient property processing.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center hover:border-purple-500 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">24/7 Availability</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Direct phone lines available around the clock to address your urgent inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="survey" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-emerald-400 font-extrabold uppercase text-xs tracking-widest">Feedback & Rating</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-2">Rate The Tilan Investments Website</h2>
+                <p class="text-slate-400 mt-2 text-sm">
+                    Take 20 seconds to rate your website experience and help us measure visitor satisfaction.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Rating Form -->
+                <div class="lg:col-span-7 bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl">
+                    <form id="surveyForm" onsubmit="submitSurvey(event)" class="space-y-6">
+                        
+                        <!-- Star Rating -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Overall Site Satisfaction:</label>
+                            <div class="flex items-center gap-2 text-3xl text-amber-400 cursor-pointer" id="starContainer">
+                                <i class="fa-regular fa-star hover:scale-110 transition-transform" data-rating="1" onclick="setRating(1)"></i>
+                                <i class="fa-regular fa-star hover:scale-110 transition-transform" data-rating="2" onclick="setRating(2)"></i>
+                                <i class="fa-regular fa-star hover:scale-110 transition-transform" data-rating="3" onclick="setRating(3)"></i>
+                                <i class="fa-regular fa-star hover:scale-110 transition-transform" data-rating="4" onclick="setRating(4)"></i>
+                                <i class="fa-regular fa-star hover:scale-110 transition-transform" data-rating="5" onclick="setRating(5)"></i>
+                            </div>
+                            <input type="hidden" id="selectedStarRating" value="5">
+                        </div>
+
+                        <!-- Metric Sliders -->
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                                    <span>Visual Aesthetics & Branding</span>
+                                    <span id="valDesign" class="text-emerald-400 font-bold">5 / 5</span>
+                                </div>
+                                <input type="range" min="1" max="5" value="5" id="sliderDesign" oninput="updateScore('Design', this.value)" class="w-full accent-emerald-500 cursor-pointer">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                                    <span>Navigation & Responsiveness</span>
+                                    <span id="valNav" class="text-emerald-400 font-bold">5 / 5</span>
+                                </div>
+                                <input type="range" min="1" max="5" value="5" id="sliderNav" oninput="updateScore('Nav', this.value)" class="w-full accent-blue-500 cursor-pointer">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                                    <span>Clarity of Service Information</span>
+                                    <span id="valClarity" class="text-emerald-400 font-bold">5 / 5</span>
+                                </div>
+                                <input type="range" min="1" max="5" value="5" id="sliderClarity" oninput="updateScore('Clarity', this.value)" class="w-full accent-amber-500 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Comment Area -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Brief Feedback (Optional):</label>
+                            <textarea id="visitorComment" rows="3" placeholder="Leave your impression or suggestions..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-400 hover:to-blue-500 text-white font-extrabold text-base transition-all shadow-lg shadow-emerald-500/20">
+                            Submit Rating
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Dynamic Score Visualizer -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-slate-800/50 border border-slate-700 rounded-3xl p-6 sm:p-8 text-center">
+                        <h3 class="text-slate-400 text-xs font-bold uppercase tracking-wider mb-2">Website Approval Rating</h3>
+                        <div class="text-6xl font-black text-emerald-400 mb-2" id="liveCalculatedScore">100%</div>
+                        <p class="text-slate-300 text-xs" id="scoreGradeText">Grade: Exceptional Presentation</p>
+
+                        <div class="mt-6 pt-6 border-t border-slate-700/80 space-y-3 text-left">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-slate-400">Total Client Reviews</span>
+                                <span class="text-white font-bold" id="totalReviewCount">142</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-slate-400">Average Satisfaction</span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star"></i> 4.9 / 5.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submission Confirmation Message -->
+                    <div id="surveySuccessAlert" class="hidden bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 p-5 rounded-2xl text-center space-y-2">
+                        <i class="fa-solid fa-circle-check text-3xl text-emerald-400"></i>
+                        <h4 class="font-bold text-base text-white">Feedback Submitted!</h4>
+                        <p class="text-xs text-emerald-300">Thank you for rating the Tilan Investments website.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-emerald-500 flex items-center justify-center font-heading text-lg font-black text-white">
+                            TI
+                        </div>
+                        <span class="font-heading text-xl font-extrabold tracking-tight text-white">TILAN INVESTMENTS</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Leading provider of Real Estate solutions, General Supplies, and Financial Consultancy services anchored in trust.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Core Services</a></li>
+                        <li><a href="#why-us" class="hover:text-emerald-400 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#survey" class="hover:text-emerald-400 transition-colors">Rate Our Website</a></li>
+                    </ul>
+                </div>
+
+                <!-- Foundations -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Our Foundations</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-xs"></i> Uncompromising Integrity</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-xs"></i> Corporate Responsibility</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-xs"></i> Strategic Planning</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-xs"></i> Prompt Procurement</li>
+                    </ul>
+                </div>
+
+                <!-- Phone Lines -->
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-4">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Contact Us Directly</h4>
+                    <div>
+                        <span class="text-[10px] text-slate-400 block font-semibold uppercase">Primary Phone Line:</span>
+                        <a href="tel:0722313878" class="font-bold text-emerald-400 text-base hover:underline flex items-center gap-2 mt-1">
+                            <i class="fa-solid fa-phone"></i> 0722 313 878
+                        </a>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-emerald-400 block font-semibold uppercase">Accessible Anytime (24/7):</span>
+                        <a href="tel:0732363383" class="font-bold text-blue-400 text-base hover:underline flex items-center gap-2 mt-1">
+                            <i class="fa-solid fa-headset"></i> 0732 363 383
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                &copy; <span id="currentYear"></span> Tilan Investments. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Drawer Controller
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Interactive Rating Star Selector
+        let currentStarRating = 5;
+        function setRating(rating) {
+            currentStarRating = rating;
+            document.getElementById('selectedStarRating').value = rating;
+            const stars = document.querySelectorAll('#starContainer i');
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.remove('fa-regular');
+                    star.classList.add('fa-solid');
+                } else {
+                    star.classList.remove('fa-solid');
+                    star.classList.add('fa-regular');
+                }
+            });
+            recalculateTotalScore();
+        }
+
+        function updateScore(type, value) {
+            document.getElementById(`val${type}`).textContent = `${value} / 5`;
+            recalculateTotalScore();
+        }
+
+        function recalculateTotalScore() {
+            const design = parseInt(document.getElementById('sliderDesign').value);
+            const nav = parseInt(document.getElementById('sliderNav').value);
+            const clarity = parseInt(document.getElementById('sliderClarity').value);
+            const stars = currentStarRating;
+
+            const total = design + nav + clarity + stars;
+            const percentage = Math.round((total / 20) * 100);
+
+            const scoreEl = document.getElementById('liveCalculatedScore');
+            const gradeEl = document.getElementById('scoreGradeText');
+
+            scoreEl.textContent = `${percentage}%`;
+
+            if (percentage >= 90) {
+                gradeEl.textContent = 'Grade: Exceptional Presentation';
+                scoreEl.className = 'text-6xl font-black text-emerald-400 mb-2';
+            } else if (percentage >= 70) {
+                gradeEl.textContent = 'Grade: Very Good Experience';
+                scoreEl.className = 'text-6xl font-black text-blue-400 mb-2';
+            } else {
+                gradeEl.textContent = 'Grade: Needs Improvement';
+                scoreEl.className = 'text-6xl font-black text-amber-400 mb-2';
+            }
+        }
+
+        function submitSurvey(e) {
+            e.preventDefault();
+            const alertBox = document.getElementById('surveySuccessAlert');
+            alertBox.classList.remove('hidden');
+
+            const totalReviewCount = document.getElementById('totalReviewCount');
+            totalReviewCount.textContent = parseInt(totalReviewCount.textContent) + 1;
+
+            setTimeout(() => {
+                alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
+
+        // Default setup
+        setRating(5);
+    </script>
+</body>
+</html>
